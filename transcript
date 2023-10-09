@@ -1,0 +1,89 @@
+# OpenFile ./SYS_TOP_TB.v
+vsim work.SYS_TOP_TB
+# vsim work.SYS_TOP_TB 
+# Start time: 15:29:24 on Oct 04,2022
+# Loading work.SYS_TOP_TB
+# Loading work.SYS_TOP
+# Loading work.RST_SYNC
+# Loading work.DATA_SYNC
+# Loading work.BIT_SYNC
+# Loading work.ClkDiv
+# Loading work.UART
+# Loading work.UART_TX
+# Loading work.MUX
+# Loading work.parity_Calc
+# Loading work.serializer
+# Loading work.UART_TX_FSM
+# Loading work.UART_RX
+# Loading work.data_sampling
+# Loading work.deserializer
+# Loading work.edge_bit_counter
+# Loading work.parity_Check
+# Loading work.Stop_Check
+# Loading work.strt_Check
+# Loading work.UART_RX_FSM
+# Loading work.SYS_CTRL
+# Loading work.CTRL_TX
+# Loading work.CTRL_RX
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.CLK_GATE
+# ** Warning: (vsim-3017) ./SYS_TOP_TB.v(81): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /SYS_TOP_TB/DUT File: ./SYS_TOP.v
+# ** Warning: (vsim-3722) ./SYS_TOP_TB.v(81): [TFMPC] - Missing connection for port 'par_err'.
+# ** Warning: (vsim-3722) ./SYS_TOP_TB.v(81): [TFMPC] - Missing connection for port 'stp_err'.
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/RST_N \
+sim:/SYS_TOP_TB/UART_CLK \
+sim:/SYS_TOP_TB/REF_CLK \
+sim:/SYS_TOP_TB/UART_RX_IN \
+sim:/SYS_TOP_TB/UART_TX_O
+vsim work.SYS_TOP_TB
+# End time: 15:30:11 on Oct 04,2022, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 3
+# vsim work.SYS_TOP_TB 
+# Start time: 15:30:11 on Oct 04,2022
+# Loading work.SYS_TOP_TB
+# Loading work.SYS_TOP
+# Loading work.RST_SYNC
+# Loading work.DATA_SYNC
+# Loading work.BIT_SYNC
+# Loading work.ClkDiv
+# Loading work.UART
+# Loading work.UART_TX
+# Loading work.MUX
+# Loading work.parity_Calc
+# Loading work.serializer
+# Loading work.UART_TX_FSM
+# Loading work.UART_RX
+# Loading work.data_sampling
+# Loading work.deserializer
+# Loading work.edge_bit_counter
+# Loading work.parity_Check
+# Loading work.Stop_Check
+# Loading work.strt_Check
+# Loading work.UART_RX_FSM
+# Loading work.SYS_CTRL
+# Loading work.CTRL_TX
+# Loading work.CTRL_RX
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.CLK_GATE
+# ** Warning: (vsim-3017) ./SYS_TOP_TB.v(81): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /SYS_TOP_TB/DUT File: ./SYS_TOP.v
+# ** Warning: (vsim-3722) ./SYS_TOP_TB.v(81): [TFMPC] - Missing connection for port 'par_err'.
+# ** Warning: (vsim-3722) ./SYS_TOP_TB.v(81): [TFMPC] - Missing connection for port 'stp_err'.
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/DUT/UART_TX_CLK
+add wave -position insertpoint  \
+sim:/SYS_TOP_TB/RST_N \
+sim:/SYS_TOP_TB/UART_CLK \
+sim:/SYS_TOP_TB/REF_CLK \
+sim:/SYS_TOP_TB/UART_RX_IN \
+sim:/SYS_TOP_TB/UART_TX_O
+run -all
+# ** Note: $stop    : ./SYS_TOP_TB.v(57)
+#    Time: 400030 ns  Iteration: 0  Instance: /SYS_TOP_TB
+# Break in Module SYS_TOP_TB at ./SYS_TOP_TB.v line 57
+# End time: 15:31:52 on Oct 04,2022, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 3
