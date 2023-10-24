@@ -1,19 +1,30 @@
-RTL to GDS Implementation of Low Power Configurable Multi Clock Digital System
+# RTL to GDS Implementation of Low Power Configurable Multi Clock Digital System
+
+## Introduction
+
+The Low Power Configurable Multi Clock Digital System is designed to receive commands through a UART receiver. It performs various system functions such as register file reading/writing and processing using the ALU block. The results are sent using up to a 4-byte frame through the UART transmitter communication protocol.
+
+## Overview
+
+The system receives a UART Frame from the UART RX block. The first frame determines the required command, and the system supports four different operations:
+
+- **Register File Write Command**
+- **Register File Read Command**
+- **ALU Operation Command with Operand**
+- **ALU Operation Command with No Operand**
+
+## Block Diagram
 
 
-#Introduction
-This system is responsible of receiving commands through UART receiver to do different system functions as register file reading/writing or doing some processing using ALU block and send result using up to 4 bytes frame through UART transmitter communication protocol
-#Overview
-The system receives a UART Frame from the UART RX block, the first frame determines the needed command, the system offers 4 different operations:
-Register File Write command
-Register File Read command
-ALU Operation command with operand
-ALU Operation command with No operand
+## System Specifications
 
-#Block Diagram
- 
+- **Reference Clock (REF_CLK):** 50 MHz
+- **UART Clock (UART_CLK):** 3.6864 MHz
+- **Clock Divider:** Always enabled (clock divider enable = 1)
 
-#System Specifications
-Reference Clock (REF_CLK): 50 MHz
-UART Clock (UART_CLK): 3.6864 MHz
-Clock Divider: Always enabled (clock divider enable = 1)
+
+
+## Contributors
+
+- Mohamed Elfeki
+
