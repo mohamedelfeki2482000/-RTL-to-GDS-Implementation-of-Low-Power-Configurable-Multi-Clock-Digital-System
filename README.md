@@ -15,6 +15,7 @@ The system receives a UART Frame from the UART RX block. The first frame determi
 
 ## Block Diagram
 
+![Block Diagram](diagram.png)
 
 ## System Specifications
 
